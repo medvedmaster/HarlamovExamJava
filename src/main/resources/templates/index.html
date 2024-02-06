@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн библиотека</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('http://i1.wp.com/wonkhe.com/wp-content/wonkhe-uploads/2018/04/shutterstock_269078303.jpg'); /* Укажите URL вашего изображения */
+            background-size: cover;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+        .icon {
+            font-size: 40px;
+            margin: 10px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<h1>Онлайн библиотека</h1>
+<div class="links">
+    <a th:href="@{/library/people}"><i class="icon fas fa-users"></i><b>ЧИТАТЕЛИ</b></a>
+    <a th:href="@{/library/books}"><i class="icon fas fa-book"></i><b>КНИГИ</b></a>
+</div>
+</body>
+</html>
